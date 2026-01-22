@@ -11,7 +11,7 @@
 
 **Transform raw business documents into professional analytical insights with a single prompt**
 
-[Live Demo](https://demo.analysis-platform.com) • [Documentation](https://docs.analysis-platform.com) • [Report Bug](https://github.com/yourusername/analysis-platform/issues) • [Request Feature](https://github.com/yourusername/analysis-platform/issues)
+[Live Demo](https://github.com/milansharma01/ai-business-analyst) • [Documentation](https://github.com/milansharma01/ai-business-analyst/wiki) • [Report Bug](https://github.com/milansharma01/ai-business-analyst/issues) • [Request Feature](https://github.com/milansharma01/ai-business-analyst/issues)
 
 </div>
 
@@ -194,8 +194,8 @@ Before you begin, ensure you have the following installed:
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/analysis-platform.git
-cd analysis-platform
+git clone https://github.com/milansharma01/ai-business-analyst.git
+cd ai-business-analyst
 ```
 
 #### 2. Set Up Backend
@@ -253,10 +253,10 @@ Create a `.env` file in the `backend/` directory:
 
 ```env
 # Application
-APP_NAME=Analysis Platform
+APP_NAME=AI Business Analyst Platform
 ENVIRONMENT=development
 DEBUG=True
-SECRET_KEY=your-super-secret-key-change-this
+SECRET_KEY=your-super-secret-key-change-this-in-production
 API_V1_PREFIX=/api/v1
 
 # Database
@@ -288,7 +288,7 @@ CELERY_BROKER_URL=redis://localhost:6379/1
 CELERY_RESULT_BACKEND=redis://localhost:6379/2
 
 # Security
-JWT_SECRET_KEY=your-jwt-secret-key
+JWT_SECRET_KEY=your-jwt-secret-key-change-this
 JWT_ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=15
 REFRESH_TOKEN_EXPIRE_DAYS=7
@@ -334,10 +334,6 @@ NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 Visit `http://localhost:3000` and sign up with your email.
 
 #### 2. **Upload Your Files**
-
-<div align="center">
-  <img src="docs/images/upload-demo.gif" alt="File Upload Demo" width="600"/>
-</div>
 
 - Click **"New Analysis"** from the dashboard
 - Drag and drop your files (or click to browse)
@@ -435,7 +431,7 @@ Provide sentiment trends over time and suggest improvements.
 ## 📁 Project Structure
 
 ```
-analysis-platform/
+ai-business-analyst/
 ├── backend/
 │   ├── app/
 │   │   ├── api/                    # API endpoints
@@ -704,10 +700,10 @@ kubectl scale deployment backend --replicas=3
 
 ```bash
 # Production build
-docker build -t analysis-platform:prod -f Dockerfile.prod .
+docker build -t ai-business-analyst:prod -f Dockerfile.prod .
 
 # Staging build
-docker build -t analysis-platform:staging -f Dockerfile.staging .
+docker build -t ai-business-analyst:staging -f Dockerfile.staging .
 ```
 
 ### Health Checks
@@ -757,7 +753,7 @@ curl http://localhost:3000/api/health
 - [ ] On-premise deployment
 - [ ] Real-time collaboration
 
-See the [open issues](https://github.com/yourusername/analysis-platform/issues) for a full list of proposed features and known issues.
+See the [open issues](https://github.com/milansharma01/ai-business-analyst/issues) for a full list of proposed features and known issues.
 
 ---
 
@@ -790,54 +786,19 @@ Contributions make the open-source community an amazing place to learn, inspire,
 - Keep commits atomic and descriptive
 - Reference issues in PR descriptions
 
-### Code of Conduct
-
-This project adheres to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2026 Analysis Platform Contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
----
 
 ## 📧 Contact
 
-**Project Maintainer**: Your Name  
-**Email**: yourname@example.com  
-**Twitter**: [@yourhandle](https://twitter.com/yourhandle)  
-**LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
+**Project Creator & Maintainer**: Milan Sharma  
+**LinkedIn**: [https://www.linkedin.com/in/milansharma01](https://www.linkedin.com/in/milansharma01)  
+**GitHub**: [@milansharma01](https://github.com/milansharma01)  
+**Email**: milan.sharma@example.com
 
-**Project Link**: [https://github.com/yourusername/analysis-platform](https://github.com/yourusername/analysis-platform)
+**Project Repository**: [https://github.com/milansharma01/ai-business-analyst](https://github.com/milansharma01/ai-business-analyst)
 
-**Live Demo**: [https://demo.analysis-platform.com](https://demo.analysis-platform.com)
+**Live Demo**: [Coming Soon]
 
-**Documentation**: [https://docs.analysis-platform.com](https://docs.analysis-platform.com)
+**Documentation**: [GitHub Wiki](https://github.com/milansharma01/ai-business-analyst/wiki)
 
 ---
 
@@ -857,22 +818,27 @@ SOFTWARE.
 - [FastAPI Best Practices](https://github.com/zhanymkanov/fastapi-best-practices)
 - [Next.js Examples](https://github.com/vercel/next.js/tree/canary/examples)
 
+### Special Thanks
+- To all the open-source contributors who make projects like this possible
+- The amazing developer communities on GitHub, Stack Overflow, and Reddit
+- Early beta testers and users providing valuable feedback
+
 ### Contributors
 Thanks to all the amazing people who have contributed to this project!
 
-<a href="https://github.com/yourusername/analysis-platform/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yourusername/analysis-platform" />
+<a href="https://github.com/milansharma01/ai-business-analyst/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=milansharma01/ai-business-analyst" />
 </a>
 
 ---
 
 ## 📊 Project Stats
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/analysis-platform?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/analysis-platform?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/analysis-platform)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/analysis-platform)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/analysis-platform)
+![GitHub stars](https://img.shields.io/github/stars/milansharma01/ai-business-analyst?style=social)
+![GitHub forks](https://img.shields.io/github/forks/milansharma01/ai-business-analyst?style=social)
+![GitHub issues](https://img.shields.io/github/issues/milansharma01/ai-business-analyst)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/milansharma01/ai-business-analyst)
+![GitHub last commit](https://img.shields.io/github/last-commit/milansharma01/ai-business-analyst)
 
 ---
 
@@ -880,19 +846,23 @@ Thanks to all the amazing people who have contributed to this project!
 
 If you find this project helpful, please consider:
 
-- ⭐ Starring the repository
-- 🐛 Reporting bugs and issues
-- 💡 Suggesting new features
-- 📖 Improving documentation
-- 🔧 Contributing code
+- ⭐ **Star the repository** to show your support
+- 🐛 **Report bugs** and issues you encounter
+- 💡 **Suggest new features** that would be valuable
+- 📖 **Improve documentation** to help others
+- 🔧 **Contribute code** to enhance the platform
+- 📢 **Share** with colleagues who might benefit
 
-**Buy me a coffee**: [Ko-fi](https://ko-fi.com/yourhandle)
+**Connect with me on LinkedIn**: [Milan Sharma](https://www.linkedin.com/in/milansharma01)
 
 ---
 
 <div align="center">
 
-**Built with ❤️ by the Analysis Platform Team**
+**Built with ❤️ by Milan Sharma**
 
+*Transforming how businesses leverage data for decision-making*
+
+[GitHub](https://github.com/milansharma01) • [LinkedIn](https://www.linkedin.com/in/milansharma01) • [Documentation](https://github.com/milansharma01/ai-business-analyst/wiki)
 
 </div>
