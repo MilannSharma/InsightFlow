@@ -792,7 +792,7 @@ Contributions make the open-source community an amazing place to learn, inspire,
 **Project Creator & Maintainer**: Milan Sharma  
 **LinkedIn**: [https://www.linkedin.com/in/milansharma01](https://www.linkedin.com/in/milansharma01)  
 **GitHub**: [@milansharma01](https://github.com/milansharma01)  
-**Email**: milan.sharma@example.com
+**Email**: milansharma942105@gmail.com
 
 **Project Repository**: [https://github.com/milansharma01/ai-business-analyst](https://github.com/milansharma01/ai-business-analyst)
 
